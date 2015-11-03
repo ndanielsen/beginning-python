@@ -39,14 +39,26 @@ About the origin of Python, Van Rossum wrote in 1996:
 
 ***
 
-## MULTI-PURPOSE aka "batteries included"
+## MULTI-PURPOSE
 
+* Built-in Functionality
 * Web development (Django, Flask)
 * Data Science (Sci-kitlearn, Scipy, Pandas)
 * Natural Language Processing (NLTK, TextBlob)
 * Image Processing (Pillow)
 
 Check out [https://github.com/vinta/awesome-python](https://github.com/vinta/awesome-python)
+
+
+## USING THE ALL OF THE AWESOME PYTHON
+
+PIP
+pip is a package management system used to install and manage software packages written in Python. Many packages can be found in the Python Package Index (PyPI)
+
+[Available Pip Packages](https://pypi.python.org/pypi)
+
+[Quick Start Guide for PIP](https://pip.pypa.io/en/latest/quickstart/)
+
 
 ***
 
