@@ -65,7 +65,7 @@ pip is a package management system used to install and manage software packages 
 ## GREAT ONLINE COMMUNITY
 
 * [https://www.reddit.com/r/Python/](https://www.reddit.com/r/Python/)
-* [Github](Github https://github.com/trending?l=python)
+* [Github](https://github.com/trending?l=python)
 * [Pycon & Other videos] (https://github.com/s16h/py-must-watch)
 
 ***
