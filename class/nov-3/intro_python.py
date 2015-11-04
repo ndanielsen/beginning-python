@@ -4,6 +4,8 @@ GA - Introduction to Python
 DATE - 03 November 2015
 
 Instructor - Nathan Danielsen
+
+https://github.com/ndanielsen/beginning-python/
 """
 
 # BASIC DATA TYPES
@@ -11,7 +13,7 @@ Instructor - Nathan Danielsen
 # Numbers
 # https://docs.python.org/2/tutorial/introduction.html#numbers
 
-5       # Integer
+5       # Integer 
 5.0     # Float (decimal)
 x = 5               # creates an object
 
@@ -42,7 +44,7 @@ c = 6
 d = a + b - c
 print d
 
-e = d / 6
+e = d / 6.0
 print e
 
 
@@ -51,7 +53,8 @@ print e
 
 type('string')        # str
 
-s = str(42)         # convert another data type into a string (casting)
+s = str(42)   
+s      # convert another data type into a string (casting)
 s = 'I like you'
 
 # examine a string
@@ -69,10 +72,22 @@ s[-1]               # returns 'u'
 # 3) Save each book title to a variable (ie book1_title)
 
 book1 = "Beyond the Door by Dick, Philip K., 1928-1982"
+book1_title = book1[:15]
+len(book1_title)
+book1[:-30]
+
 
 book2 = "The Variable Man by Dick, Philip K., 1928-1982"
 
+len(book2)
+book2[17:]
+
+book2[:-30]
+
+
 book3 = "The Skull by Dick, Philip K., 1928-1982"
+book3[:-30]
+len(book3[:-30])
 
 ################
 
@@ -94,6 +109,15 @@ s3 + ' ' + str(42)  # same thing
 # BONUS: Comparison:  Does book1_title have more works then book3_title3?
 # HINT: https://docs.python.org/2/library/stdtypes.html#comparisons
 
+book1_title = book1[:15]
+
+book1_list = book1_title.split()
+
+len(book1_list)
+
+book1_list = ['Beyond', 'the', 'Door']
+
+book1_list[0][2]
 
 # LISTS
 # https://docs.python.org/2/tutorial/introduction.html#lists
@@ -105,10 +129,17 @@ len(nums)                   # check the length: 3
 nums[0]                     # print first element
 nums[0] = 6                 # replace a list element
 
+nums
+
 nums.append(7)              # list 'method' that modifies the list
 help(nums.append)           # help on this method
-help(nums)                  # help on a list object
+help(nums)     
+
+dir(nums)
+             # help on a list object
 nums.remove('five')         # another list method
+
+nums
 
 sorted(nums)                # 'function' that does not modify the list
 nums                        # it was not affected
@@ -120,32 +151,52 @@ weekdays = ['mon','tues','wed','thurs','fri']
 weekdays[0]         # element 0
 weekdays[0:3]       # elements 0, 1, 2
 weekdays[:3]        # elements 0, 1, 2
-weekdays[3:]        # elements 3, 4
-weekdays[-1]        # last element (element 4)
+test = weekdays[3:]        # elements 3, 4
+
+weekdays
+
+weekdays[-2]        # last element (element 4)
 weekdays[::2]       # every 2nd element (0, 2, 4)
 weekdays[::-1]      # backwards (4, 3, 2, 1, 0)
 
 days = weekdays + ['sat','sun']     # concatenate lists
 
+days
+
+
 # FOR LOOPS
 # https://docs.python.org/2/tutorial/controlflow.html#for-statements
 
 # range returns a list of integers
-range(0, 3)     # returns [0, 1, 2]: includes first value but excludes second value
-range(3)        # same thing: starting at zero is the default
+range(0,3)     # returns [0, 1, 2]: includes first value but excludes second value
+range(30)        # same thing: starting at zero is the default
+
+num = 0
 
 # simple for loop
-for i in range(5):
-    print i
+for num in range(5):
+    print 'Do nothing'
 
 # print each list element in uppercase
-fruits = ['apple', 'banana', 'cherry']
-for i in range(len(fruits)):
-    print fruits[i].upper()
 
+upper_fruits = []
+for i in range(len(fruits)):
+    upper_case = fruits[i].upper()    
+    upper_fruits.append(upper_case)
+    
+print upper_fruits
+
+fruits = ['apple', 'banana', 'cherry']
 # better for loop
 for fruit in fruits:
-    print fruit.upper()
+  print fruit.upper()
+  print 'someting'
+
+for space_fruit in fruits:
+      print space_fruit.upper()
+      
+
+
 
 
 # BOOLEANS and COMPARISONS
@@ -161,6 +212,8 @@ for fruit in fruits:
 # https://docs.python.org/2/tutorial/controlflow.html
 
 sam = 'sam'
+
+
 if sam == 'ham':
     print 'do something'
 elif sam == 'jam':
@@ -178,10 +231,14 @@ def give_me_five():         # function definition ends with colon
 give_me_five()              # prints the return value (5)
 num = give_me_five()        # assigns return value to a variable, doesn't print it
 
-def calc(x, y, op):         # three parameters (without any defaults)
-    if op == 'add':         # conditional statement
+num
+
+fruit = 'add'
+
+def calc(x, y):         # three parameters (without any defaults)
+    if oops == 'add':         # conditional statement
         return x + y
-    elif op == 'subtract':
+    elif oops == 'subtract':
         return x - y
     else:
         print 'Valid operations: add, subtract'
@@ -192,11 +249,23 @@ calc(5, 3, 'multiply')
 calc(5, 3)
 
 
-# EXERCISE: Write a script that prints the numbers from 1 to 100. But for
+# EXERCISE: Write a program that prints the numbers from 1 to 100. But for
 # multiples of 3 print 'fizz' instead of the number, and for the multiples of
 # 5 print 'buzz'. For numbers which are multiples of both 3 and 5 print 'fizzbuzz'.
 
+def fizz_buzz():
+    nums = range(1, 101)    
+    for num in nums:
+        if num % 15 == 0:
+            print 'fizzbuzz'
+        elif num % 3 == 0:
+            print 'fizz'
+        elif num % 5 == 0:
+            print 'buzz'
+        else:
+            print num
 
+fizz_buzz()
 
 
 # EXERCISE: Given a list of strings, return a list with the strings
@@ -206,6 +275,17 @@ calc(5, 3)
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
 
+def front_x(words):
+    lista=[]
+    listb=[]    
+    for word in words:
+        if word[0]=='x':
+            lista.append(word)
+        else:
+            listb.append(word)
+    return sorted(lista) + sorted(listb)
+
+front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
 
 
 
