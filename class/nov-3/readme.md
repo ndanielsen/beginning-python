@@ -10,5 +10,7 @@ As a bonus material, I've added an exercise in the HW folder. The exercise is a 
 
 Wish the best of luck to all of you and feel free to send me any questions.
 
-Nathan
+**Nathan**
+
+
 nathan.danielsen [&t] gmail

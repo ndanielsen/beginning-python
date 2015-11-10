@@ -5,6 +5,8 @@ Gender words for HW
 
 Count the number of gender words in your favorite book on project gutenberg. 
 
+Inspiration:
+http://nbviewer.ipython.org/gist/nealcaren/5105037
 """
 
 MALE_WORDS=set(['guy','spokesman','chairman',"men's",'men','him',"he's",'his',
