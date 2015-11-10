@@ -55,3 +55,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+pg815.txt
+gender_words_answers.py
+intermediate_python_workshop_answers.py

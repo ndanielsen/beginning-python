@@ -18,13 +18,13 @@ d = b/2
 
 '''
 What is type(a)?
-  int
+  
 What is type(b)?
-  float
+  
 What is c?
-  2
+  
 What is d?
-  2.5
+  
 '''
 
 e = [a, b]
@@ -32,30 +32,30 @@ f = range(10)
 
 '''
 What is type(e)?
-  list
+  
 What is len(e)?
-  2
+  
 What is type(f)?
-  list
+  
 What are the contents of f?
-  integers 0 through 9
+  
 What is 'range' called?
-  a function
+  
 How do I get help on 'range'?
-  help(range)
+  
 '''
 
 g = ['mon','tues','wed','thurs','fri']
 
 '''
 How do I slice out 'mon'?
-  g[0]
+
 How do I slice out 'mon' through 'wed'?
-  g[0:3]
+
 What are two ways to slice out 'fri'?
-  g[4] or g[-1]
+
 How do I check the type of 'mon'?
-  type(g[0])
+
 '''
 
 g.remove('wed')
@@ -64,15 +64,15 @@ h = sorted(g, reverse=True)
 
 '''
 What are the contents of g?
-  ['mon','tues','thurs','fri']
+  
 What are the contents of h?
-  ['tues','thurs','mon','fri']
+ 
 What is 'remove' called?
-  a list method
+
 How do I get help on 'remove'?
-  help(g.remove)
+ 
 What is 'reverse=True' called?
-  an optional argument
+ 
 '''
 
 i = 'Hello'
@@ -83,11 +83,11 @@ m = i[0]
 
 '''
 What is 'k'?
-  'Hellofriend'
+
 What is 'l'?
-  undefined (due to error)
+
 What is 'm'?
-  'H'
+
 '''
 
 
@@ -113,13 +113,13 @@ Given that: letters = ['a','b','c']
 Write a list comprehension that returns: ['A','B','C']
 Hint: 'hello'.upper() returns 'HELLO'
 
-[letter.upper() for letter in letters]
+
 
 BONUS EXERCISE:
 Given that: word = 'abc'
 Write a list comprehension that returns: ['A','B','C']
 
-[letter.upper() for letter in word]
+
 '''
 
 
@@ -138,6 +138,18 @@ for num in nums:
 # syntax: [expression for variable in iterable if condition]
 cubes_of_even = [num**3 for num in nums if num % 2 == 0]    # [8, 64]
 
+'''
+BONUS EXERCISE:
+
+Complex list comprehensions
+
+nested_list = [[1], [5, 112], [2], [3, 5, 10, 34]]
+
+Can you write a nested list comprehensions and 
+
+then sort the list from smallest to largests
+
+'''
 
 
 ## DICTIONARIES
@@ -185,18 +197,10 @@ Then, change the value for 'b' to be 25
 Then, change the 30 to be 35
 Finally, append 45 to the end of the list that contains 35 and 40
 
-d['a']
-d['b'] = 25
-d['c'][0] = 35
-d['c'].append(45)
-
 BONUS EXERCISE:
 Write a list comprehension that returns a list of the keys in uppercase
 
-[key.upper() for key in d.keys()]
 '''
-
-
 
 ## APIs
 
@@ -233,7 +237,7 @@ artists_header = artists[0].keys()                      # list of 2 strings
 
 ## WORKING WITH PUBLIC DATA
 
-# List of data sources: https://github.com/justmarkham/DAT5/blob/master/other/public_data.md
+# List of data sources: https://github.com/ndanielsen/beginning-python/blob/master/resources/public_data.md
 # FiveThirtyEight: http://fivethirtyeight.com/
 # FiveThirtyEight data: https://github.com/fivethirtyeight/data
 # NFL ticket prices data: https://github.com/fivethirtyeight/data/tree/master/nfl-ticket-prices
@@ -250,6 +254,7 @@ with open('2014-average-ticket-price.csv', 'rU') as f:
     data = [row for row in csv.reader(f)]       # list of lists
 
 # examine the data
+data
 type(data)
 len(data)
 data[0]
@@ -257,7 +262,7 @@ data[1]
 
 # save the data we want
 data = data[1:97]
-
+data
 # step 1: create a list that only contains events
 data[0][0]
 data[1][0]
@@ -266,7 +271,7 @@ events = [row[0] for row in data]
 
 # EXERCISE
 # step 2: create a list that only contains prices (stored as integers)
-prices = [int(row[2]) for row in data]
+
 
 # step 3: figure out how to locate the away teams
 events[0]
@@ -282,11 +287,7 @@ for event in events:
 
 # EXERCISE
 # step 5: use a for loop to make a list of the home teams
-home_teams = []
-for event in events:
-    start = event.find(' at ') + 4
-    stop = event.find(' Tickets ')
-    home_teams.append(event[start:stop])
+
 
 # step 6: figure out how to get prices only for Ravens home games
 zip(home_teams, prices)     # list of tuples
@@ -300,5 +301,3 @@ ravens_away = [price for team, price in zip(away_teams, prices) if team == 'Balt
 
 # EXERCISE
 # step 8: calculate the average of each list
-float(sum(ravens_home)) / len(ravens_home)
-float(sum(ravens_away)) / len(ravens_away)
