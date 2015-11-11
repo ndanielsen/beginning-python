@@ -83,7 +83,9 @@ FEMALE_WORDS=set(['heroine','spokeswoman','chairwoman',"women's",'actress','wome
 
 
 #7 Comment on your findings
-# Do some basic math. What are the total words? 
+# Do some basic math. 
+# What are the total words per gender?
+# What is the averages for each?
 # Print out your findings and comment on them. 
 
 
