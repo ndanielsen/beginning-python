@@ -1,3 +1,41 @@
+# Post-Class Notes
+
+Hi all,
+
+Great class. Send your hw code for a review via email or a gist on github. I will do a free code review and send you the answer code.
+
+Also I will be doing a free public class at the MLK library on December 5th at the [dcpython pylab](http://www.meetup.com/DCPython/events/225514354/). I'll probably go through the answers to this dataset and beyond. =)
+
+For next continuing on your python journey, I recommend getting involved
+in the python community. 
+
+Also great free online books for continuing your building your skills:
+
+[Learn Python the Hardway](http://learnpythonthehardway.org/book/) 
+A classic that many have used, but also a little snarky (if you like that)
+
+[How to Think Like a Computer Scientist](http://interactivepython.org/runestone/static/thinkcspy/index.html)
+An equally good book and allows you to use python right in your browser. 
+
+[Learn Python](http://www.learnpython.org/)
+This website is intended for everyone who wishes to learn the Python programming language.
+
+[Codecademy's Python course](http://www.codecademy.com/en/tracks/python)
+Good beginner material, including tons of in-browser exercises.
+
+[Google's Python Class](https://developers.google.com/edu/python/)
+More advanced but fantastic, it includes hours of useful lecture videos and downloadable exercises (with solutions).
+
+[A Crash Course in Python for Scientists](http://nbviewer.ipython.org/gist/rpmuller/5920182)
+Read through the Overview section for a quick introduction to Python.
+
+[DataQuest](https://dataquest.io/)
+Similar interface to Codecademy, but focused on teaching Python in the context of data science.
+
+
+
+
+
 # Pre-Class Notes
 
 Hi all,

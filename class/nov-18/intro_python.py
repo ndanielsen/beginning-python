@@ -6,7 +6,11 @@ DATE - 18 November 2015
 Instructor - Nathan Danielsen
 
 https://github.com/ndanielsen/beginning-python/
+
+tree/master/class/nov-18
 """
+
+print 'hello'
 
 # BASIC DATA TYPES
 
@@ -33,7 +37,7 @@ type(True)          # bool
 10 / 3      # Division
 10 / 3.0    # Floor division
 16 % 5      # Modulo (remainder)
-2**4        # Exponent
+2**10        # Exponent
 
 # variable assignment
 
@@ -62,21 +66,32 @@ s[0]                # returns 'I'
 len(s)              # returns 10
 
 # string slicing like lists
-s[:6]               # returns 'I like'
-s[7:]               # returns 'you'
+s[0:7]               # returns 'I like'
+s[6:]               # returns 'you'
 s[-1]               # returns 'u'
 
 # EXERCISE: Book Titles (Part 1)
 # 1) Extract the book title from the string
 # 2) Save each book title to a variable (ie book1_title)
-# 3) How many characters in each title?
+# 3) How many characters/elements are in each title?
 
 book1 = "Beyond the Door by Dick, Philip K., 1928-1982"
+book1_title = book1[:15]
+book1[-26:]
+
+len(book1_title)
+
+book1_title
 
 book2 = "The Variable Man by Dick, Philip K., 1928-1982"
+book2_title = book2[:12]
+book2_title
+
+book2[:-30]
 
 book3 = "The Skull by Dick, Philip K., 1928-1982"
 
+book3_title = book3[:-30]
 
 
 
@@ -99,9 +114,14 @@ s3 + ' ' + str(42)  # same thing
 # 1. How words are book1_title? 
 # BONUS: Comparison:  Does book1_title have more words then book3_title3?
 # HINT: https://docs.python.org/2/library/stdtypes.html#comparisons
+book1 = "Beyond the Door by Dick, Philip K., 1928-1982"
+book1_title = book1[:15]
 
+book1_words = book1_title.split()
 
+len(book1_words)
 
+len(book3_title.split())
 
 # LISTS
 # https://docs.python.org/2/tutorial/introduction.html#lists
@@ -127,7 +147,8 @@ nums
 
 sorted(nums)                # 'function' that does not modify the list
 nums                        # it was not affected
-nums = sorted(nums)         # overwrite the original list
+nums = sorted(nums) 
+nums        # overwrite the original list
 sorted(nums, reverse=True)  # optional argument
 
 # list slicing [start:end:stride]
@@ -147,26 +168,35 @@ weekdays[::-1]      # backwards (4, 3, 2, 1, 0)
 # Add/ concatentate 'sat' and 'sun' to the weekdays list.
 # Assign this to new a variable called days
 
+weekdays.append('sat')
+weekdays.append('sun')
 
+weekend = ['sat', 'sun']
 
+days = weekdays + weekend
 
+weekdays + ['sat'] + ['sun']
+
+days
 
 # FOR LOOPS
 # https://docs.python.org/2/tutorial/controlflow.html#for-statements
 
 # range returns a list of integers
-range(0,3)     # returns [0, 1, 2]: includes first value but excludes second value
+range(5)     # returns [0, 1, 2]: includes first value but excludes second value
 range(30)        # same thing: starting at zero is the default
 
-num = 0
 
 # simple for loop
 for num in range(5):
-    print num
+    print 'hello: ' + str(num)
 
 # print each list element in uppercase
 
 fruits = ['apple', 'banana', 'cherry']
+
+len(fruits)
+
 
 for i in range(len(fruits)):
     upper_case = fruits[i].upper()    
@@ -174,8 +204,8 @@ for i in range(len(fruits)):
     
 
 # better for loop
-for fruit in fruits:
-  print fruit.upper()
+for space_fruit in fruits:
+  print space_fruit.upper()
 
 
 
@@ -186,6 +216,7 @@ for fruit in fruits:
 
 1 < 5  #strictly less than     
 10 > 3  #strictly greater than        
+
 100 == 100 #equal    
 100 != 100 #not equal
 
@@ -198,7 +229,7 @@ for fruit in fruits:
 
 sam = 'sam'
 
-if sam == 'ham':
+if num %3 == 'ham':
     print 'do something'
 elif sam == 'jam':
     print 'do something'
@@ -213,9 +244,28 @@ else:
 documents = ['report1.docx', 'newproduct.ppt', 'report1data.csv', 
             'rawdata.csv', 'notes.docx', 'competitors.ppt',]
 
+documents[0][-4:]
+documents[1][-3:]
+documents[2][-3:]
 
+documents[0].split('.')[1]
 
+for document in documents:
+    document_split =  document.split('.')   
+    document_suffix = document_split[1]
+    
+    if document_suffix == 'docx':
+        print 'docx: ' + document
+        
+    elif document_suffix == 'ppt':
+        print 'ppt: ' + document
+    
+    else:
+        print 'csv: ' + document
 
+import glob
+
+glob.glob('*')
 
 
 
@@ -230,12 +280,20 @@ num = give_me_five()        # assigns return value to a variable, doesn't print 
 
 num
 
-fruit = 'add'
 
-def calc(x, y):         # three parameters (without any defaults)
-    if oops == 'add':         # conditional statement
+def add_two_numbers(x, y):
+    return x + y
+
+add_two_numbers(8, 9)
+
+
+
+ops = 'add'
+
+def calc(x, y, ops):         # three parameters (without any defaults)
+    if ops == 'add':         # conditional statement
         return x + y
-    elif oops == 'subtract':
+    elif ops == 'subtract':
         return x - y
     else:
         print 'Valid operations: add, subtract'
@@ -246,12 +304,29 @@ calc(5, 3, 'multiply')
 calc(5, 3)
 
 
+ops = 'add'
+
+def calc_plus(x, y, ops='add'):         # three parameters (without any defaults)
+    if ops == 'add':         # conditional statement
+        return x + y
+    elif ops == 'subtract':
+        return x - y
+    else:
+        print 'Valid operations: add, subtract'
+
+calc_plus(5, 3, ops='subtract')
+
+
+
 
 
 
 # EXERCISE: Write a program that prints the numbers from 1 to 100. But for
 # multiples of 3 print 'fizz' instead of the number, and for the multiples of
 # 5 print 'buzz'. For numbers which are multiples of both 3 and 5 print 'fizzbuzz'.
+
+
+
 
 
 

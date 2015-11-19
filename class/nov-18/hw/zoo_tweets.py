@@ -11,7 +11,6 @@ import csv # What does this do?
 
 zoo_csv = 'zoo_tweets.csv' 
 
-
 ### Task 1a
 ### Open and read the csv file using the csv.reader function
 ### Hint: https://docs.python.org/2/library/csv.html
@@ -23,6 +22,15 @@ zoo_csv = 'zoo_tweets.csv'
 ### Hint: This be the second (elem 2) of the list
 
 
+tweet_list = []
+
+with open(zoo_csv, 'r') as csvfile:
+    spamreader = csv.reader(csvfile, delimiter='|')
+    for row in spamreader:
+        tweet_list.append(row[2])
+
+print tweet_list
+
 
 
 ### Task 2
@@ -30,6 +38,7 @@ zoo_csv = 'zoo_tweets.csv'
 ### Assign a variable called rows to all rows after the first. ie row 0
 ### How many tweets or rows are in this csv file?
 ### When is the time span of the tweets (first versus last)?
+
 
 
 
