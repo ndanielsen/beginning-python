@@ -23,6 +23,30 @@ About the origin of Python, Van Rossum wrote in 1996:
 
 ****
 
+## Recommended Resources for Your Python Journey
+
+[Learn Python the Hardway](http://learnpythonthehardway.org/book/) 
+A classic that many have used, but also a little snarky (if you like that)
+
+[How to Think Like a Computer Scientist](http://interactivepython.org/runestone/static/thinkcspy/index.html)
+An equally good book and allows you to use python right in your browser. 
+
+[Learn Python](http://www.learnpython.org/)
+This website is intended for everyone who wishes to learn the Python programming language.
+
+[Codecademy's Python course](http://www.codecademy.com/en/tracks/python)
+Good beginner material, including tons of in-browser exercises.
+
+[Google's Python Class](https://developers.google.com/edu/python/)
+More advanced but fantastic, it includes hours of useful lecture videos and downloadable exercises (with solutions).
+
+[A Crash Course in Python for Scientists](http://nbviewer.ipython.org/gist/rpmuller/5920182)
+Read through the Overview section for a quick introduction to Python.
+
+[DataQuest](https://dataquest.io/)
+Similar interface to Codecademy, but focused on teaching Python in the context of data science.
+
+
 ## WHY PYTHON?
 
 ![You can fly](https://imgs.xkcd.com/comics/python.png)
