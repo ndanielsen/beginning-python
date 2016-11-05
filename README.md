@@ -11,7 +11,13 @@
 
 About the origin of Python, Van Rossum wrote in 1996: 
     
-    Over six years ago, in December 1989, I was looking for a "hobby" programming project that would keep me occupied during the week around Christmas. My office ... would be closed, but I had a home computer, and not much else on my hands. I decided to write an interpreter for the new scripting language I had been thinking about lately: a descendant of ABC that would appeal to Unix/C hackers. I chose Python as a working title for the project, being in a slightly irreverent mood (and a big fan of Monty Python's Flying Circus). [source](https://en.wikipedia.org/wiki/Python_(programming_language))
+    Over six years ago, in December 1989, I was looking for a "hobby" programming 
+    project that would keep me occupied during the week around Christmas.
+    My office ... would be closed, but I had a home computer, and not much else on 
+    my hands. I decided to write an interpreter for the new scripting language I had
+    been thinking about lately: a descendant of ABC that would appeal to Unix/C hackers. 
+    I chose Python as a working title for the project, being in a slightly irreverent 
+    mood (and a big fan of Monty Python's Flying Circus). [source](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 #### Core Philosopy ("PEP 20 (The Zen of Python)")
 
