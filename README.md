@@ -51,11 +51,30 @@ run `import this` to see on your local computer
 
 ## Recommended Resources for Your Python Journey
 
-[Learn Python the Hardway](http://learnpythonthehardway.org/book/) 
-A classic that many have used, but also a little snarky (if you like that)
+#### First Tier
+
+[Automate the Boring Stuff](https://automatetheboringstuff.com/) 
+Learn python through small practical projects that might reduce the tedium in your job! (Highly recommended)
 
 [How to Think Like a Computer Scientist](http://interactivepython.org/runestone/static/thinkcspy/index.html)
 An equally good book and allows you to use python right in your browser. 
+
+[Official Python Tutorial](https://docs.python.org/3/tutorial/)
+Why not learn it the official way? This is a very indepth tutorial that will get you up and running!
+
+[Hacking Secret Ciphers with Python](http://inventwithpython.com/hacking/)
+If you're interested in cryptography, this is a highly recommended way to go. 
+
+[Flask Micro Blog Official Tutorial](http://flask.pocoo.org/docs/0.11/tutorial/)
+Feel comfortable with python and want to make a simple blog? Try flask. (Intermediate python required)
+
+[Django Official Tutorial](https://docs.djangoproject.com/en/1.10/intro/)
+Dive into an opinionated web framework that has already made many decisions for you. Try django.  (Intermediate python required)
+
+#### Second Tier
+
+[Learn Python the Hardway](http://learnpythonthehardway.org/book/) 
+A classic that many have used, but also a little snarky (if you like that). It's teaches legacy python 2.x, so be warned.
 
 [Learn Python](http://www.learnpython.org/)
 This website is intended for everyone who wishes to learn the Python programming language.
