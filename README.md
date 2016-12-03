@@ -5,7 +5,7 @@
 ### HISTORY OF PYTHON?
 
 * Created by Guido Von Rossum in 1991
-* Currently on version 3+ but most people still use 2.7+
+* Currently on version 3+ but many people still use 2.7+
 * Influenced by:
 * C, C++, Dylan, Haskell, Java, Icon, Lisp, Perl, ABC, ALGOL, Modula-3
 
